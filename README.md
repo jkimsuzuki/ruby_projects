@@ -1,1 +1,1 @@
-# ruby_projects
+collection of ruby projects for the odin project
