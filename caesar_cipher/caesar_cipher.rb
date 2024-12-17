@@ -9,10 +9,11 @@ def caesar_cipher (offset, string)
        new_alph_index = new_pos % 26
        encrypt_str = encrypt_str + alph[new_alph_index]
     else
-      return_str = return_str + " "
+      encrypt_str = encrypt_str + " "
     end
 }
 
-return return_str
-
+return encrypt_str
 end
+
+puts caesar_cipher(3, "abc")
