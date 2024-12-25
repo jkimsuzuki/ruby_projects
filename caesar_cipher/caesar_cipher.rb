@@ -1,19 +1,21 @@
-def caesar_cipher (offset, string)
-  encrypt_str = ""
-  alph = "abcdefghijklmnopqrstuvwxyz"
 
-  string.split("").each { |c|
-    if c != " "
-       c_index = alph.index(c)
-       new_pos = c_index + offset
-       new_alph_index = new_pos % 26
-       encrypt_str = encrypt_str + alph[new_alph_index]
+
+def caesar_cipher(offset, string)
+  encrypt_str = ''
+  alpha = 'abcdefghijklmnopqrstuvwxyz'
+
+  string.split('').each do |c|
+    if c != ' '
+      c_index = alpha.index(c)
+      new_pos = c_index + offset
+      new_alpha_index = new_pos % 26
+      encrypt_str += alpha[new_alpha_index]
     else
-      encrypt_str = encrypt_str + " "
+      encrypt_str += ' '
     end
-}
+  end
 
-return encrypt_str
+  encrypt_str
 end
 
-puts caesar_cipher(3, "abc")
+puts caesar_cipher(3, 'abc')
